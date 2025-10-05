@@ -1,0 +1,567 @@
+* {
+    box-sizing: border-box;
+    scrollbar-color: #a2d042 #FFFFFF;
+    scrollbar-width:thin;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 1.35em;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+hr{
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    width: 70%;
+    color: black;
+    background-color: black;
+    border-width: 0;
+    border-radius: 2px;
+}
+
+iframe{
+    border-radius: 20px;
+}
+
+ul{
+    list-style-image:  url(../images/starspin.gif);
+}
+
+li{
+    display: list-item;
+}
+  
+.clr{
+    clear:both;
+}
+
+.center{
+    text-align: center;
+}
+
+.block{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.block2{
+    width: 560px;
+    height: 315px;
+    float: right;
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#headername{
+    height: 160px;
+    width: 1050px;
+    display: block;
+    background:transparent url(../images/icons/header.png) 
+    center top no-repeat;
+    background-repeat: no-repeat; 
+    background-size: 1050px 160px;
+    transition: transform .3s;
+}
+
+#headername:hover{
+    height: 160px;
+    width: 1050px;
+    display: block;
+    background:transparent url(../images/icons/header1.png) 
+    center top no-repeat;
+    background-repeat: no-repeat; 
+    background-size: 1050px 160px;
+    transform: scale(1.25);
+}
+
+/* START SIDENAV */
+#house {
+    height:170px;
+    width: 170px;
+    display:block;
+    background:transparent url(../images/icons/home.png) 
+    center top no-repeat;
+    background-repeat: no-repeat;
+    background-size: 170px 170px;
+    transition: transform .3s;
+    }
+   
+#house:hover {
+    height:170px;
+    width: 170px;
+    display:block;
+    background-image:url(../images/icons/home1.png); 
+    background-size: 170px 170px;
+    transform: scale(1.5);
+    }
+
+#ani {
+    height:170px;
+    width: 170px;
+    display:block;
+    background:transparent url(../images/icons/ani.png) 
+    center top no-repeat;
+    background-repeat: no-repeat;
+    background-size: 170px 170px;
+    transition: transform .3s;
+    }
+   
+#ani:hover {
+    height:170px;
+    width: 170px;
+    display:block;
+    background-image:url(../images/icons/ani1.png); 
+    background-size: 170px 170px;
+    transform: scale(1.5);
+    }
+
+#illust {
+    height:170px;
+    width: 170px;
+    display:block;
+    background:transparent url(../images/icons/illust.png) 
+    center top no-repeat;
+    background-repeat: no-repeat;
+    background-size: 170px 170px;
+    transition: transform .3s;
+    }
+   
+#illust:hover {
+    height:170px;
+    width: 170px;
+    display:block;
+    background-image:url(../images/icons/illust1.png); 
+    background-size: 170px 170px;
+    transform: scale(1.5);
+    }
+     
+#games {
+    height:170px;
+    width: 170px;
+    display:block;
+    background:transparent url(../images/icons/games.png) 
+    center top no-repeat;
+    background-repeat: no-repeat;
+    background-size: 170px 170px;
+    transition: transform .3s;
+    }
+   
+#games:hover {
+    height:170px;
+    width: 170px;
+    display:block;
+    background-image:url(../images/icons/games1.png); 
+    background-size: 170px 170px;
+    transform: scale(1.5);
+    }
+
+#contact {
+    height:170px;
+    display:block;
+    background:transparent url(../images/icons/contact.png) 
+    center top no-repeat;
+    background-repeat: no-repeat;
+    background-size: 170px 170px;
+    transition: transform .3s;
+    }
+   
+#contact:hover {
+    height:170px;
+    display:block;
+    background-image:url(../images/icons/contact1.png); 
+    background-size: 170px 170px;
+    transform: scale(1.5);
+    }
+
+ #nav{
+    width: 170px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+ /* background-image: url(https://placehold.co/176x900/92D134/FFF); */
+    }
+/* END SIDENAV*/
+
+#main-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+#main-header{
+    width: 1050px;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+#main-container{
+    width:1150px;
+    height:800px;
+    background-image: url(../images/main_bg.png);
+    background-repeat: no-repeat;
+    margin:20px auto;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+}
+
+#abtme{
+    float: left;
+    width: 50%;
+    margin-top: 80px;
+    margin-left: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border-style: outset;
+    border-width: 5px;
+    border-color: #a2d042;
+    box-sizing: border-box;
+}
+
+#sft{
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 35px;
+    background-color: #FFFFFF;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+#gear{
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 35px;
+    background-color: #FFFFFF;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+#contactbox{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+#contactbox2{
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contactbox2 ul{
+    list-style-position: inside;
+}
+
+#contact1{
+    width: 45%;
+}
+
+#contact2{
+    width: 95%;
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border-style: outset;
+    border-width: 5px;
+    border-color: #a2d042;
+    box-sizing: border-box;
+}
+
+#resume{
+    height:170px;
+    width: 170px;
+    display:block;
+    background:transparent url(../images/icons/star.png) 
+    center top no-repeat;
+    background-repeat: no-repeat;
+    background-size: 170px 170px;
+    transition: transform .3s;
+}
+
+#resume:hover{
+    height:170px;
+    width: 170px;
+    display:block;
+    background-image:url(../images/icons/star1.png); 
+    background-size: 170px 170px;
+    transform: scale(1.5);
+}
+
+#main-feed{
+    width: 1050px;
+    height: 700px;
+    border-radius: 20px;
+    position: relative;
+    /* background-image: url(https://placehold.co/1050x700/FFF/333); */
+    top: 50px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#cow-spin figure img{
+    display: block;
+    position: relative;
+    bottom: 15px;
+    right: 5px;
+    -webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+	-webkit-transition: 2s ease-in-out;
+	transition: 2s ease-in-out;
+    float: right;
+    box-sizing: border-box;
+}
+
+#cow-spin figure img:hover{
+    -webkit-transform: rotate(185deg) scale(1);
+	transform: rotate(185deg) scale(1);
+    box-sizing: border-box;
+}
+
+/* START OF TABBED IMAGES */
+ /* The grid: Four equal columns that floats next to each other */
+ .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text box 1*/
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+
+  /* Expanding image text box 2*/
+  #imgtext2 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  } 
+/* END OF TABBED IMAGES */
+
+/* START ILLUST GALLERY */
+.illustrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .illustcolumn {
+    flex: 33.3%;
+    max-width: 33.3%;
+    padding: 0 5px;
+  }
+  
+  .illustcolumn img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+  }
+/* END ILLUST GALLERY */
+
+.playicon{
+    height:200px;
+    width: 300px;
+    display:block;
+    background:transparent url(../images/icons/play.png) 
+    center top no-repeat;
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    margin: auto;
+    transition: transform .3s;
+    }
+   
+.playicon:hover {
+    height:200px;
+    width: 300px;
+    display:block;
+    background-image:url(../images/icons/play1.png);
+    background-size: 300px 200px;
+    transform: scale(.90);
+    }
+
+
+/*TULIPS*/
+#tulips1{
+    float: left;
+    width: 70%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#tulips2{
+    float: right;
+    width: 29%;
+    margin: 5px 10px 5px 0px;
+    box-sizing: border-box;
+}
+
+#tulips2 img{
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+#tulips3{
+    float: left;
+    width: 70%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#tulips4{
+    display: flex;
+    width: 100%;
+}
+
+#tulips4 img{
+    max-width: 25%; 
+    height: 400px; 
+    margin: 20px;
+    object-fit: scale-down;
+}
+
+/* LAYERS */
+
+#layers1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+#layers1 iframe{
+    width: 750px;
+    height: 450px;
+}
+
+#layers1 img{
+    max-width: 33.3%; 
+    height: 450px;
+    object-fit: scale-down;
+}
+
+#sallytalk{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+#layersc{
+    width: 66.6%;
+    align-content: center;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+#layers2{
+    width: 50%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#layers3{
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#layers3 img{
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+footer{
+    width: 100%;
+   height: auto;
+   line-height: 16px;
+    background-color: #a2d042;
+   text-align:center; 
+   font-size: 15px;
+   margin:0;
+   font-weight:normal;
+   padding:0;
+   padding-top:10px;
+   padding-bottom:10px;
+   bottom: 0;
+   position: relative;
+}
+
+@media screen and (max-width:1000px){
+
+    #main-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
