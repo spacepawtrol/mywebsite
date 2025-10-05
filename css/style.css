@@ -13,9 +13,12 @@ p{
 html, body{
     scroll-behavior: smooth;
     height: 100vh;
-    overflow: hidden;
-  }
+    overflow: auto;
+}
 
+iframe html, iframe body {
+    overflow: auto !important;
+}
 hr{
     margin-left: auto;
     margin-right: auto;
@@ -256,7 +259,6 @@ li{
     position: absolute;
     top: 50px;
     left: 50px;
-    overflow: hidden;
 }
 
 /* CONTENT STYLES */
