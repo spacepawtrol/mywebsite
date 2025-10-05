@@ -10,8 +10,10 @@ p{
     font-size: 1.35em;
 }
 
-html{
+html, body{
     scroll-behavior: smooth;
+    height: 100vh;
+    overflow: hidden;
   }
 
 hr{
@@ -86,148 +88,170 @@ li{
 
 /* START SIDENAV */
 #house {
-    height:170px;
-    width: 170px;
+    height: min(170px, 15vh);
+    width: min(170px, 15vh);
     display:block;
     background:transparent url(../images/icons/home.png) 
     center top no-repeat;
     background-repeat: no-repeat;
-    background-size: 170px 170px;
+    background-size: contain;
     transition: transform .3s;
     }
    
 #house:hover {
-    height:170px;
-    width: 170px;
+    height: min(170px, 15vh);
+    width: min(170px, 15vh);
     display:block;
     background-image:url(../images/icons/home1.png); 
-    background-size: 170px 170px;
+    background-size: contain;
     transform: scale(1.5);
     }
 
 #ani {
-    height:170px;
-    width: 170px;
+    height: min(170px, 15vh);
+    width: min(170px, 15vh);
     display:block;
     background:transparent url(../images/icons/ani.png) 
     center top no-repeat;
     background-repeat: no-repeat;
-    background-size: 170px 170px;
+    background-size: contain;
     transition: transform .3s;
     }
    
 #ani:hover {
-    height:170px;
-    width: 170px;
+    height: min(170px, 15vh);
+    width: min(170px, 15vh);
     display:block;
     background-image:url(../images/icons/ani1.png); 
-    background-size: 170px 170px;
+    background-size: contain;
     transform: scale(1.5);
     }
 
 #illust {
-    height:170px;
-    width: 170px;
+    height: min(170px, 15vh);
+    width: min(170px, 15vh);
     display:block;
     background:transparent url(../images/icons/illust.png) 
     center top no-repeat;
     background-repeat: no-repeat;
-    background-size: 170px 170px;
+    background-size: contain;
     transition: transform .3s;
     }
    
 #illust:hover {
-    height:170px;
-    width: 170px;
+    height: min(170px, 15vh);
+    width: min(170px, 15vh);
     display:block;
     background-image:url(../images/icons/illust1.png); 
-    background-size: 170px 170px;
+    background-size: contain;
     transform: scale(1.5);
     }
      
 #games {
-    height:170px;
-    width: 170px;
+    height: min(170px, 15vh);
+    width: min(170px, 15vh);
     display:block;
     background:transparent url(../images/icons/games.png) 
     center top no-repeat;
     background-repeat: no-repeat;
-    background-size: 170px 170px;
+    background-size: contain;
     transition: transform .3s;
     }
    
 #games:hover {
-    height:170px;
-    width: 170px;
+    height: min(170px, 15vh);
+    width: min(170px, 15vh);
     display:block;
     background-image:url(../images/icons/games1.png); 
-    background-size: 170px 170px;
+    background-size: contain;
     transform: scale(1.5);
     }
 
 #contact {
-    height:170px;
+    height: min(170px, 15vh);
+    width: min(170px, 15vh);
     display:block;
     background:transparent url(../images/icons/contact.png) 
     center top no-repeat;
     background-repeat: no-repeat;
-    background-size: 170px 170px;
+    background-size: contain;
     transition: transform .3s;
     }
    
 #contact:hover {
-    height:170px;
+    height: min(170px, 15vh);
+    width: min(170px, 15vh);
     display:block;
     background-image:url(../images/icons/contact1.png); 
-    background-size: 170px 170px;
+    background-size: contain;
     transform: scale(1.5);
     }
 
- #nav{
-    width: 170px;
-    height: 900px;
+#nav{
+    width: min(170px, 15vh);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    order: 2;
+}
+
+#nav-buttons{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 100%;
     align-items: center;
-    margin-right: 40px;
- /* background-image: url(https://placehold.co/176x900/92D134/FFF); */
-    }
+}
 /* END SIDENAV*/
 
+/* DESKTOP LAYOUT */
 #main-wrapper{
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 #wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#content-area{
     display: flex;
     flex-direction: column;
 }
 
 #main-header{
     width: min(1050px, calc(100vw - 250px));
-    height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 20px;
+    height: 15vh;
+    margin: 0 auto;
 }
 
 #main-container{
     width: min(1150px, calc(100vw - 250px));
-    height: 800px;
+    height: 85vh;
     background-image: url(../images/main_bg.png);
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 20px auto;
-    margin-bottom: 60px;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
+#main-feed{
+    width: min(1050px, calc(100vw - 280px));
+    height: calc(85vh - 50px);
+    border-radius: 20px;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* CONTENT STYLES */
 #abtme{
     float: left;
     width: 50%;
@@ -319,17 +343,6 @@ li{
     transform: scale(1.5);
 }
 
-#main-feed{
-    width: min(1050px, calc(100vw - 280px));
-    height: 700px;
-    border-radius: 20px;
-    position: relative;
-    /* background-image: url(https://placehold.co/1050x700/FFF/333); */
-    top: 50px;
-    margin: auto;
-    overflow: hidden;
-}
-
 #cow-spin figure img{
     display: block;
     position: relative;
@@ -349,86 +362,24 @@ li{
     box-sizing: border-box;
 }
 
-/* START OF TABBED IMAGES */
- /* The grid: Four equal columns that floats next to each other */
- .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-  }
-  
-  /* Style the images inside the grid */
-  .column img {
-    opacity: 0.8;
-    cursor: pointer;
-  }
-  
-  .column img:hover {
-    opacity: 1;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* The expanding image container (positioning is needed to position the close button and the text) */
-  .container {
-    position: relative;
-    display: none;
-  }
-  
-  /* Expanding image text box 1*/
-  #imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-  }
-
-  /* Expanding image text box 2*/
-  #imgtext2 {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-  }
-  
-  /* Closable button inside the image */
-  .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-  } 
-/* END OF TABBED IMAGES */
-
-/* START ILLUST GALLERY */
+/* GALLERY STYLES */
 .illustrow {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .illustcolumn {
+}
+
+.illustcolumn {
     flex: 33.3%;
     max-width: 33.3%;
     padding: 0 5px;
-  }
-  
-  .illustcolumn img {
+}
+
+.illustcolumn img {
     margin-top: 10px;
     vertical-align: middle;
     width: 100%;
-  }
-/* END ILLUST GALLERY */
+}
 
 .playicon{
     height:200px;
@@ -559,80 +510,132 @@ footer{
    position: relative;
 }
 
+/* MOBILE LAYOUT */
 @media screen and (max-width: 768px){
+    html, body{
+        overflow: auto;
+    }
+    
     #main-wrapper{
         flex-direction: column;
+        height: auto;
         padding: 10px;
     }
     
     #wrapper{
-        order: 2;
         width: 100%;
+        flex-direction: column;
+    }
+    
+    #content-area{
+        flex-direction: column;
+        order: 1;
     }
     
     #main-header{
-        width: 100% !important;
-        height: 80px !important;
-        margin: 10px 0 !important;
+        width: 100%;
+        height: 80px;
+        margin: 0;
     }
     
     #headername{
-        width: 100% !important;
-        height: 80px !important;
-        background-size: contain !important;
-        transform: none !important;
+        width: 100%;
+        height: 80px;
+        background-size: contain;
     }
     
     #headername:hover{
-        background-size: contain !important;
-        transform: scale(1.05) !important;
-    }
-    
-    #main-container{
-        width: 100% !important;
-        height: auto !important;
-        margin: 10px 0 !important;
-        overflow: hidden !important;
-    }
-    
-    #main-feed{
-        width: 100% !important;
-        height: 50vh !important;
-        top: 0 !important;
-    }
-    
-    #feed{
-        width: 100% !important;
-        height: 100% !important;
-    }
-    
-    #cow-spin{
-        display: none !important;
+        background-size: contain;
+        transform: scale(1.05);
     }
     
     #nav{
-        order: 1;
         width: 100%;
         height: auto;
         flex-direction: row;
         margin: 10px 0;
+        order: 2;
     }
     
-    #nav > div {
-        flex-direction: row !important;
-        height: auto !important;
-        justify-content: center !important;
+    #nav-buttons{
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
         gap: 5px;
     }
     
+    #main-container{
+        width: 100%;
+        height: calc(100vh - 160px);
+        margin: 0;
+        overflow: hidden;
+        order: 3;
+    }
+    
+    #main-feed{
+        width: 100%;
+        height: calc(100vh - 160px);
+        top: 0;
+    }
+    
+    #feed{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #cow-spin{
+        display: none;
+    }
+    
+    /* MOBILE NAV BUTTONS - COMPLETE OVERRIDE */
     #house, #ani, #illust, #games, #contact {
         height: 50px !important;
         width: 50px !important;
-        background-size: 50px 50px !important;
+        background-size: contain !important;
+        transition: none !important;
+        transform: none !important;
     }
     
     #house:hover, #ani:hover, #illust:hover, #games:hover, #contact:hover {
-        background-size: 50px 50px !important;
-        transform: scale(1.05) !important;
+        height: 50px !important;
+        width: 50px !important;
+        background-size: contain !important;
+        transform: none !important;
+    }
+    
+    /* Mobile-specific button images */
+    #house {
+        background-image: url(../images/icons/home.png) !important;
+    }
+    #house:hover {
+        background-image: url(../images/icons/home1.png) !important;
+    }
+    
+    #ani {
+        background-image: url(../images/icons/ani.png) !important;
+    }
+    #ani:hover {
+        background-image: url(../images/icons/ani1.png) !important;
+    }
+    
+    #illust {
+        background-image: url(../images/icons/illust.png) !important;
+    }
+    #illust:hover {
+        background-image: url(../images/icons/illust1.png) !important;
+    }
+    
+    #games {
+        background-image: url(../images/icons/games.png) !important;
+    }
+    #games:hover {
+        background-image: url(../images/icons/games1.png) !important;
+    }
+    
+    #contact {
+        background-image: url(../images/icons/contact.png) !important;
+    }
+    #contact:hover {
+        background-image: url(../images/icons/contact1.png) !important;
     }
 }
