@@ -65,7 +65,7 @@ li{
 }
 
 #headername{
-    height: 160px;
+    height: 12vh;
     width: 100%;
     display: block;
     background:transparent url(../images/icons/header.png) 
@@ -76,7 +76,7 @@ li{
 }
 
 #headername:hover{
-    height: 160px;
+    height: 12vh;
     width: 100%;
     display: block;
     background:transparent url(../images/icons/header1.png) 
@@ -210,8 +210,10 @@ li{
 #main-wrapper{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
+    padding-top: 8%;
+    box-sizing: border-box;
 }
 
 #wrapper{
@@ -228,13 +230,16 @@ li{
 
 #main-header{
     width: min(1050px, calc(100vw - 250px));
-    height: 15vh;
+    height: 18vh;
     margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 #main-container{
     width: min(1150px, calc(100vw - 250px));
-    height: 85vh;
+    height: 82vh;
     background-image: url(../images/main_bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
