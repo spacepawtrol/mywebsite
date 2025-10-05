@@ -189,18 +189,18 @@ li{
 
 #nav{
     width: min(170px, 15vh);
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
+    margin-right: 5%;
     order: 0;
 }
 
 #nav-buttons{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100%;
     align-items: center;
 }
@@ -212,7 +212,7 @@ li{
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
-    padding-top: 8%;
+    padding-top: 3%;
     box-sizing: border-box;
 }
 
@@ -509,18 +509,18 @@ li{
 
 footer{
     width: 100%;
-   height: auto;
-   line-height: 16px;
+    height: auto;
+    line-height: 16px;
     background-color: #a2d042;
-   text-align:center; 
-   font-size: 15px;
-   margin:0;
-   font-weight:normal;
-   padding:0;
-   padding-top:10px;
-   padding-bottom:10px;
-   bottom: 0;
-   position: relative;
+    text-align:center; 
+    font-size: 15px;
+    margin:0;
+    font-weight:normal;
+    padding:0;
+    padding-top:10px;
+    padding-bottom:10px;
+    bottom: 0;
+    position: relative;
 }
 
 /* MOBILE LAYOUT */
@@ -566,7 +566,8 @@ footer{
         width: 100%;
         height: auto;
         flex-direction: row;
-        margin: 10px 0;
+        margin-bottom: 10vh;
+        margin-right: 50vh;
         order: 2;
     }
     
@@ -574,6 +575,7 @@ footer{
         flex-direction: row;
         height: auto;
         justify-content: center;
+
         gap: 5px;
     }
     
