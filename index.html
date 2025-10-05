@@ -21,6 +21,16 @@
   <div id="main-wrapper">
     <div id="wrapper">
       
+      <div id="nav">
+        <div id="nav-buttons">
+          <a id="house"   href="home.html" target="page"></a>
+          <a id="ani"     href="ani.html" target="page"></a>
+          <a id="illust"  href="illust.html" target="page"></a>
+          <a id="games"    href="games.html" target="page"></a>
+          <a id="contact" href="contact.html" target="page"></a>
+        </div>
+      </div>
+      
       <div id="content-area">
         <div id="main-header"> <!-- brings you back to homepage-->
           <a id="headername" href="home.html" target="page"></a>
@@ -32,40 +42,31 @@
             
             <iframe id="feed" src="home.html" name="page" style="border: 0; width: 100%; height: 100%;"></iframe>
           </div>
-          
-          <div id="cow-spin">
-            <figure><img src="images/cow.png"></figure>
-            <audio id="frog" preload="auto">
-              <source src="../music/sfx/frog.mp3">
-            </audio>
-          </div>
-          
-          <!--
-          <script> 
-            // Cow Script  
-            var frogOne= $("#frog")[0];
-            $("#cow-spin figure img")
-            .mouseenter(function() {
-              frogOne.play();
-              
-              if(audio.src) {
-                audio.pause();
-                audio.currentTime = 0;
-              }
-            });
-          </script>
-          -->
         </div>
       </div>
       
-      <div id="nav">
-        <div id="nav-buttons">
-          <a id="house"   href="home.html" target="page"></a>
-          <a id="ani"     href="ani.html" target="page"></a>
-          <a id="illust"  href="illust.html" target="page"></a>
-          <a id="games"    href="games.html" target="page"></a>
-          <a id="contact" href="contact.html" target="page"></a>
-        </div>
+      <div id="cow-spin">
+        <figure><img src="images/cow.png"></figure>
+        <audio id="frog" preload="auto">
+          <source src="../music/sfx/frog.mp3">
+        </audio>
+      </div>
+      
+      <!--
+      <script> 
+        // Cow Script  
+        var frogOne= $("#frog")[0];
+        $("#cow-spin figure img")
+        .mouseenter(function() {
+          frogOne.play();
+          
+          if(audio.src) {
+            audio.pause();
+            audio.currentTime = 0;
+          }
+        });
+      </script>
+      -->
       </div>
     </div>
   </div>
