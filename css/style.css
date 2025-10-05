@@ -64,23 +64,23 @@ li{
 
 #headername{
     height: 160px;
-    width: 1050px;
+    width: 100%;
     display: block;
     background:transparent url(../images/icons/header.png) 
     center top no-repeat;
     background-repeat: no-repeat; 
-    background-size: 1050px 160px;
+    background-size: contain;
     transition: transform .3s;
 }
 
 #headername:hover{
     height: 160px;
-    width: 1050px;
+    width: 100%;
     display: block;
     background:transparent url(../images/icons/header1.png) 
     center top no-repeat;
     background-repeat: no-repeat; 
-    background-size: 1050px 160px;
+    background-size: contain;
     transform: scale(1.25);
 }
 
@@ -209,7 +209,7 @@ li{
 }
 
 #main-header{
-    width: 1050px;
+    width: min(1050px, calc(100vw - 250px));
     height: 160px;
     margin-left: auto;
     margin-right: auto;
@@ -218,11 +218,12 @@ li{
 }
 
 #main-container{
-    width:1150px;
-    height:800px;
+    width: min(1150px, calc(100vw - 250px));
+    height: 800px;
     background-image: url(../images/main_bg.png);
     background-repeat: no-repeat;
-    margin:20px auto;
+    background-size: contain;
+    margin: 20px auto;
     margin-bottom: 60px;
     box-sizing: border-box;
 }
@@ -319,7 +320,7 @@ li{
 }
 
 #main-feed{
-    width: 1050px;
+    width: min(1050px, calc(100vw - 280px));
     height: 700px;
     border-radius: 20px;
     position: relative;
@@ -558,10 +559,80 @@ footer{
    position: relative;
 }
 
-@media screen and (max-width:1000px){
-
+@media screen and (max-width: 768px){
     #main-wrapper{
-        display: flex;
         flex-direction: column;
+        padding: 10px;
+    }
+    
+    #wrapper{
+        order: 2;
+        width: 100%;
+    }
+    
+    #main-header{
+        width: 100% !important;
+        height: 80px !important;
+        margin: 10px 0 !important;
+    }
+    
+    #headername{
+        width: 100% !important;
+        height: 80px !important;
+        background-size: contain !important;
+        transform: none !important;
+    }
+    
+    #headername:hover{
+        background-size: contain !important;
+        transform: scale(1.05) !important;
+    }
+    
+    #main-container{
+        width: 100% !important;
+        height: auto !important;
+        margin: 10px 0 !important;
+        overflow: hidden !important;
+    }
+    
+    #main-feed{
+        width: 100% !important;
+        height: 50vh !important;
+        top: 0 !important;
+    }
+    
+    #feed{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    
+    #cow-spin{
+        display: none !important;
+    }
+    
+    #nav{
+        order: 1;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        margin: 10px 0;
+    }
+    
+    #nav > div {
+        flex-direction: row !important;
+        height: auto !important;
+        justify-content: center !important;
+        gap: 5px;
+    }
+    
+    #house, #ani, #illust, #games, #contact {
+        height: 50px !important;
+        width: 50px !important;
+        background-size: 50px 50px !important;
+    }
+    
+    #house:hover, #ani:hover, #illust:hover, #games:hover, #contact:hover {
+        background-size: 50px 50px !important;
+        transform: scale(1.05) !important;
     }
 }
