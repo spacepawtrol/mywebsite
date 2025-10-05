@@ -211,7 +211,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    min-height: calc(100vh - 60px);
     padding-top: 3%;
     box-sizing: border-box;
 }
@@ -239,7 +239,7 @@ li{
 
 #main-container{
     width: min(1150px, calc(100vw - 250px));
-    height: 82vh;
+    height: calc(100vh - 27vh);
     background-image: url(../images/main_bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -509,7 +509,7 @@ li{
 
 footer{
     width: 100%;
-    height: auto;
+    height: 4vh;
     line-height: 16px;
     background-color: #a2d042;
     text-align:center; 
