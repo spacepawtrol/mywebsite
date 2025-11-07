@@ -6,11 +6,11 @@
 This is a markdown file. https://www.markdownguide.org/cheat-sheet/
 
 
-View here: https://khanhvu.neocities.org/
+View website V1 here: https://khanhvu.neocities.org/
 
 Manage here: https://neocities.org/dashboard
 
-Currently, I just copy-paste to update the site.
+Currently, I am in the process of making a version 2 of my portfolio.
 
 ## PostHog
 
